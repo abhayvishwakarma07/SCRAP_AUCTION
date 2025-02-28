@@ -1,6 +1,6 @@
 import { useState , useEffect } from 'react';
 import axios from 'axios';
-import { __userapiurl } from '../../Api_url/api_url';
+import { __userapiurl } from '../Api_url/api_url';
 
 function EPAdmin() {
 
@@ -53,7 +53,7 @@ function EPAdmin() {
         <div class="row g-0">
 <div class="col-lg-12 py-6 px-5">
 <font style={{"color":"blue","fontSize":"20px"}} >{output}</font>  
-<h1 class="mb-4">Edit Profile <span class="text-primary">Here!!!</span></h1>
+<h1 class="mb-4">Edit Profile <span class="text-danger">Here!!!</span></h1>
 <div className='d-flex justify-content-center align-item-center'>
 <form className='' style={{"width":"900px"}}>
   <div className='row'>

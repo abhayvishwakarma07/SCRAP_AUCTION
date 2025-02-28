@@ -24,13 +24,13 @@ function ViewProduct() {
       <div class="container-fluid  p-0 overflow-hidden">
         <div class="row g-0">
           <div class="col-lg-12 py-1 px-3">
-            <h1 class="display-5">View <span class="text-danger">Product Here &gt;&gt;</span></h1>
+            <h1 class="">View <span class="text-danger">Product Here &gt;&gt;</span></h1>
             <center className=''>
               <div id="category_main" className=' d-flex flex-wrap m-4 justify-content-center' >
                 {
                   cList.map((row) => (
                     <Link to={`/viewscproduct/${row.catnm}`} className='m-5' style={{ "height": "300px", "width": "350px" }} >
-                      <div class="category_part border border-black p-2">
+                      <div class="category_part border border-black p-2 bg-dark rounded">
                         <img src={`/assets/caticon/${row.caticonnm}`} height={300} width={300} />
                         <br />
                         <h1 className='bg-red-200 m-1 ' >{row.catnm}</h1>

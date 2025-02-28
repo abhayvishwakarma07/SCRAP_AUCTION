@@ -28,8 +28,8 @@ import Product from './componenet/UserComponent/BedinglistCoponent/Product';
 import Charity from './componenet/UserComponent/Charitycomponent/Charity';
 import EmailVarify from './componenet/EmailvarifyCoponent/Emailvarify';
 import Manage from './componenet/AdiminCoponent/MangeuserCoponent/Manage';
-import EPAdmin from './componenet/AdiminCoponent/EDITprofile/EPAdmin';
-import CPAdmin from './componenet/AdiminCoponent/Epassword/CPAdmin';
+import EPAdmin from './componenet/EDITprofile/EPAdmin';
+import CPAdmin from './componenet/Epassword/CPAdmin';
 import Bidproduct from './componenet/UserComponent/BIdproduct/Bidproduct';
 
 function App() {

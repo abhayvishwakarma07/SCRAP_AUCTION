@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
-import { __userapiurl } from '../../Api_url/api_url';
+import { __userapiurl } from '../Api_url/api_url';
 import { useNavigate } from 'react-router-dom';
 
 function CPAdmin() {
@@ -49,25 +49,25 @@ function CPAdmin() {
    
   return (
     <>
-      <div class="container-fluid p-0 d-flex justify-content-center">
-        <div class="row shadow-lg p-3 mb-5 bg-dark rounded" style={{"width":"550px","minHeight":"550px"}}>
+      <div class="container-fluid p-0 d-flex justify-content-center align-items-center" style={{"minHeight":"550px"}}>
+        <div class="row shadow-lg bg-dark rounded" style={{"width":"440px","minHeight":"300px"}}>
           <div class="col-lg-12 py-6 px-5">
             <font style={{ "color": "red", "fontSize": "20px" }} >{output}</font><br/>
             <font style={{ "color": "red", "fontSize": "20px" }} >{error}</font>
-            <h1 class="display-5 mb-4">Change <span class="text-primary">Password Here!!!</span></h1>
+            <h1 class=" mb-4">Change <span class="text-danger">Password Here!!!</span></h1>
             <form>
               <div class="form-group">
                 <label for="opwd">Old Password:</label>
-                <input type="password" class="form-control" onChange={e => setOldPassword(e.target.value)} value={opassword} />
+                <input type="password" class="form-control" onChange={e => setOldPassword(e.target.value)} value={opassword} placeholder='Old Password' />
               </div>
               <div class="form-group">
                 <label for="npwd">New Password:</label>
-                <input type="password" class="form-control" onChange={e => setNewPassword(e.target.value)} value={npassword} />
+                <input type="password" class="form-control" onChange={e => setNewPassword(e.target.value)} value={npassword} placeholder='New Password'/>
               </div>
 
               <div class="form-group">
                 <label for="cnpwd">Confirm New Password:</label>
-                <input type="password" class="form-control" onChange={e => setConfirmNewPassword(e.target.value)} value={cnpassword} />
+                <input type="password" class="form-control" onChange={e => setConfirmNewPassword(e.target.value)} value={cnpassword} placeholder='Confirm Password' />
               </div>
               <button type="button" class="btn btn-success" onClick={handelSubmit}>Submit</button>
             </form>

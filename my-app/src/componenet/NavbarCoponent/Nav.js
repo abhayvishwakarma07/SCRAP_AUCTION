@@ -94,6 +94,15 @@ function Nav() {
                         <li class="nav-item">
                           <Link to="/charity"> <a class="nav-link">Charity<span class="sr-only">(current)</span></a></Link>
                         </li>
+                        <li class="nav-item dropdown justify-items-center mt-1">
+                          <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Setting
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><Link to='/Eprofile' className='class="dropdown-item'>Edit profile</Link></li>
+                            <li><Link to='Epassword'  className='class="dropdown-item'>Edit password</Link></li>
+                          </ul>
+                        </li>
                         <li class="nav-item">
                           <Link to="/logout"><a class="nav-link">Logout</a></Link>
                         </li>

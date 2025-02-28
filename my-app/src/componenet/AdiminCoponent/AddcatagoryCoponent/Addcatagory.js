@@ -17,7 +17,6 @@ function AddCategory() {
   const handleSubmit=(event)=>{
         if(!catName)return setOutput("catname is require");
         if(!file)return setOutput("image  is require");
-
     event.preventDefault();
     var formData = new FormData();
     formData.append('catnm', catName);
@@ -38,8 +37,8 @@ function AddCategory() {
   
   return (
     <>
-    <div class="container-fluid  p-0 overflow-hidden ">
-        <div class="row g-0 d-flex align-items-center"  style={{"height":"550px",}}>
+    <div class="container-fluid  p-0 overflow-hidden d-flex align-items-center justify-content-center" style={{"minHeight":"550px"}}>
+        <div class="row g-0 bg-dark d-flex align-items-center rounded-2" style={{"width":"400px","height":"450px"}}>
             <div class="col-lg-12 py-6 px-5">
 <h1 class="mb-4">Add <span class="text-danger">Category Here!!!</span></h1>
 <font style={{"color":"red"}} >{output}</font>
